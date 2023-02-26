@@ -1,0 +1,254 @@
+.main{
+    background-color: hsl(216, 50%, 16%);
+    
+    margin-left: 550px;
+    margin-right: 550px;
+    width: auto;
+    height: auto;
+  text-align: center;
+  color: white;
+  border: 10px,10px,10px,10px;
+  padding-bottom: 50px;
+  border-radius: 20px;
+  font-size: 18px;
+  box-shadow: 2,2,10,10, hsl(215, 32%, 27%);
+  
+  
+  
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+
+    
+
+.EQ{
+    padding-top: 50px;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    max-width: 300px;
+}
+.number{
+    text-align: left;
+    padding-left: 50px;
+    font-weight:600 ;
+    cursor: pointer
+}
+.number:hover{
+    color: hsl(178, 100%, 50%) ;
+}
+
+
+.EQ:hover{
+    
+    
+    background-image: url('./images/icon-view.svg');
+    background-size: cover;
+    display: inline-block;
+    fill:aqua;
+    opacity: 1;
+}
+
+
+.icon{
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity:0;
+    cursor: pointer;
+}
+ .icon:hover{
+    opacity: 1;
+    fill: cyan;
+ }
+
+body{
+    background-color:hsl(217, 54%, 11%) ;
+}
+.description{
+    text-align: left;
+    font-weight: 300;
+    padding-left: 50px ;
+    color:  hsl(215, 51%, 70%);
+}
+
+.main p{
+ display: inline-block;
+ margin: 0 50px;
+ font-size: 18px;
+ color: hsl(215, 51%, 70%) ;
+ cursor: pointer;
+
+}
+
+.main p:hover{
+    color: hsl(178, 100%, 50%) ;
+}
+
+.Jules{
+    padding-top: 20px;
+    width: 30px;
+    text-align: left;
+    
+}
+
+.name
+
+.footer{
+    cursor: pointer;
+    text-align: left;
+    padding-left: 30px;
+    font-weight: 400;
+}
+.price{
+    color:  hsl(178, 100%, 50%);
+}
+.name{
+    color: white;
+    cursor: pointer;
+}
+.name:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+
+
+.line{
+
+
+    
+
+   border-color:hsl(215, 32%, 27%) ; 
+}
+@media screen and (max-width: 376px) {
+    .main{
+        background-color: hsl(216, 50%, 16%);
+        
+        margin-left: 5px;
+        margin-right: 5px;
+        width: auto;
+        height: auto;
+      text-align: center;
+      color: white;
+      border: 10px,10px,10px,10px;
+      padding-bottom: 5px;
+      border-radius: 20px;
+      font-size: 8px;
+      box-shadow: 2,2,10,10, hsl(215, 32%, 27%);
+      
+      
+      
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    }
+    
+    
+        
+    
+    .EQ{
+        padding-top: 50px;
+        width: 250px;
+        height: auto;
+        border-radius: 10px;
+        cursor: pointer;
+        display: inline-block;
+        max-width: 300px;
+    }
+    .number{
+        text-align: left;
+        padding-left: 15px;
+        font-weight:600 ;
+        cursor: pointer
+    }
+    .number:hover{
+        color: hsl(178, 100%, 50%) ;
+    }
+    
+    
+    .EQ:hover{
+        
+        
+        background-image: url('./images/icon-view.svg');
+        background-size: cover;
+        display: inline-block;
+        fill:aqua;
+        opacity: 1;
+    }
+    
+    
+    .icon{
+        position: absolute;
+        top: 27%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        opacity:0;
+        cursor: pointer;
+    }
+     .icon:hover{
+        opacity: 1;
+        fill: cyan;
+     }
+    
+    body{
+        background-color:hsl(217, 54%, 11%) ;
+    }
+    .description{
+        text-align: left;
+        font-weight: 300;
+        padding-left: 50px ;
+        color:  hsl(215, 51%, 70%);
+    }
+    
+    .main p{
+     display: inline-block;
+     margin: 0 15px;
+     font-size: 10px;
+     color: hsl(215, 51%, 70%) ;
+     cursor: pointer;
+    
+    }
+    
+    .main p:hover{
+        color: hsl(178, 100%, 50%) ;
+    }
+    
+    .Jules{
+        padding-top: 20px;
+        width: 10px;
+        text-align: left;
+        
+    }
+    
+    .name
+    
+    .footer{
+        cursor: pointer;
+        text-align: left;
+        padding-left: 10px;
+        font-weight: 400;
+    }
+    .price{
+        color:  hsl(178, 100%, 50%);
+    }
+    .name{
+        color: white;
+        cursor: pointer;
+    }
+    .name:hover{
+        color: hsl(178, 100%, 50%);
+    }
+    
+    
+    
+    .line{
+    
+    
+        width: 10px;
+    
+       border-color:hsl(215, 32%, 27%) ; 
+    }
+}
