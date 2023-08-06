@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Fraunces:wght@500&family=Hanken+Grotesk:wght@100&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Fraunces:wght@500&family=Hanken+Grotesk:wght@100&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -18,33 +18,69 @@
 </head>
 <body>
 
-  <div class="main">
-
-    <div>
-      <img src="./images/image-product-desktop.jpg" alt="" class="image">
-    </div>
-   <div class="info">
-    <br>
+<div id="main" class="main">  <!-- Sign-up form start -->
+ 
+  <div class="text-container" id="text-container">
+    <h1 class="updated">Stay updated!</h1>
+    <p>Join 60,000+ product managers receiving monthly updates on:</p>
+    <p><img src="./assets/images/icon-list.svg" alt=""> Product discovery and building what matters</p> 
+    <p><img src="./assets/images/icon-list.svg" alt=""> Measuring to ensure updates are a success</p>
+    <p><img src="./assets/images/icon-list.svg" alt=""> And much more!</p>
+  
+    <form action="email" class="form">
+      <label for="email">Email address: <label id="error-message" class="error-message"></label></label>
+      <br>
+      <input class="input" type="email" id="email" name="email" placeholder="example@example.com">
+    </form>
     
-   <header>Parfume</header>
+    <button onclick="handleClick()">Subscribe to monthly newsletter</button>
+  </div>
 
-    <h1>Gabrielle Essence Eau De Parfum </h1>
-    
-  
-   <p class="chanel"> A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-    Perfumer-Creator for the House of CHANEL.</p>
-  <div class="pargahraphs">
-    <p class="newcost">$149.99</p>
-    <p   class="precost">$169.99
-    </p></div>
-  
-    <p class="cart"> <img src="./images/icon-cart.svg" alt=""> add to cart </p>
-   </div>
+  <div class="img" id="img">
+    <img src="./assets/images/illustration-sign-up-desktop.svg" alt="desktop">
   </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Mate Papava</a>.
-  </div>
+</div>
+
+<script>
+  function handleClick() {
+    var emailInput = document.getElementById('email');
+    var email = emailInput.value.trim();
+    var errorElement = document.getElementById('error-message');
+    var successMessage = document.getElementById('success-message');
+    var main = document.getElementById('main')
+    if (email === '') {
+      errorElement.textContent = 'Please enter an email address.';
+      successMessage.style.display = 'none'; // Hide the success message
+    } else {
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      
+      if (emailRegex.test(email)) {
+        errorElement.textContent = ''; // Clear the error message
+        successMessage.style.display = 'block'; // Show the success message
+        emailInput.value = ''; // Clear the email input field
+        main.style.display = 'none'
+      } else {
+        errorElement.textContent = 'Invalid email address.';
+        successMessage.style.display = 'none'; // Hide the success message
+      }
+    }
+  }
+  if (window.innerWidth <= 375) {
+        image.src = './assets\images\illustration-sign-up-mobile.svg';
+      } else {
+        image.src = './assets/images/illustration-sign-up-desktop.svg';
+      }
+</script>
+
+<!-- Success message start -->
+<div class="success-message" id="success-message">
+  <img src="./assets/images/icon-success.svg" alt="">
+ <h1 class="thanks">  Thanks for subscribing! </h1>
+ <p class="text-message"> A confirmation email has been sent to ash@loremcompany.com.
+  Please open it and click the button inside to confirm your subscription.</p>
+  <button>Dismiss message</button>
+</div>
+
 </body>
 </html>
+

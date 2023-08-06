@@ -1,144 +1,107 @@
 .main{
-    display: flex;
+    display: list-item;
     justify-content: center;
+    position: absolute;
+    color:  hsl(234, 29%, 20%)  ;
+    min-width: auto;
+    height: auto;
+    width: auto;
+    display: flex;
+    margin-right: 0;
+    margin-left: 45vh;
+    margin-top: 10vh;
     
-}
-.image{
-    height: 450px;
-    width: 300px;
-    margin-left: 200px;
-    margin-top: 200px;
-    border-bottom-left-radius: 3%;
-    border-top-left-radius: 3%;
-}
-.info{
-    height: 450px;
-    width: 300px;
-    margin-right: 200px;
-    border-top-right-radius: 3%;
-    border-bottom-right-radius: 3%;
-    margin-top: 200px;
-    font-family: 'Fraunces', serif;
-    background-color:white ;
-    text-align: left;
-    padding-left: 30px;
-    
-    
-    
-    
-    
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5%;
+    background-color: rgb(255, 255, 255);
 }
 body{
-    background-color:  hsl(30, 38%, 92%);
-}
-.attribution{
-    padding-top: 300px;
+    background-color: hsl(234, 29%, 20%);
 
 }
-header{
-    color: hsl(228, 12%, 48%);font-weight: 500;
+h1{
+    color:  hsl(234, 29%, 20%)  ;
+    font-size: 48px;
+    margin: 10px;
+    font-weight: 700;
+    
 }
-.p{
-    font-size: 14px;
-    color: hsl(228, 12%, 48%);
-    margin-right: 20px;
+
+
+.text-container{
+   margin: 50px;
+   margin-top: 90px;
+    
 }
-.newcost{
-    font-weight: 500
-    ;
-    color:rgb(0,139,139);
-    font-size: 30px;
+.img{
+    margin: 10px;
+    display: inline-block;
 }
-.precost{
-    padding-left: 40px;
-    text-decoration: line-through hsl(228, 12%, 48%);
-    color: hsl(228, 12%, 48%);
+
+.input{
+    width: 400px;
+    margin-bottom: 20px;
+    height: 50px;
+    border-radius: 10px 10px 10px 10px;
+    cursor: text;
+    font-size: medium;
 }
-.pargahraphs p {
-  display: inline-block;
-    width: 40%;
-    box-sizing: border-box;
-    padding: 3 20px;
-    height: auto;
-    padding-top: 0;
-    padding-bottom: 0px;
-}
-.cart{
-    background-color:rgb(0,139,139) ;
+button{
+    width: 400px;
+    margin-top: 10px;
+    height: 50px;
+    background-color: black;
     color: white;
-    padding-top: 20px;
-    margin-top: 20px;
-    padding-left: 15px;
-    margin-right: 40px;
-    margin-left: 20px;
-    text-align: center;
-    padding-bottom: 0px;
-    border-radius: 5%;
-    vertical-align: top;
-    padding-top: 20px;
-    margin-bottom: 35px;
-    vertical-align: top;padding-bottom: 10px;
+    border-radius: 10px 10px 10px 10px;
+    font-size: large;
     cursor: pointer;
-    box-shadow: 2px 2px 2px 2px rgba(4, 17, 100, 0.99) ;
+    box-shadow: 0.4 1 1 1;
+    border: none;
+}
+button:hover{
+    background: linear-gradient(to right,  hsl(4, 100%, 67%) , #e33dde, #0000ff);
+}
+.error-message{
+  color: hsl(4, 100%, 67%);
+  margin-left: 140px;
+}
+.success-message{
+    color: white;
+    display: none;
+    background-color:white ;
+    width: auto;
+    max-width: auto;
+    max-height: auto;
+    max-width: auto;
+    margin: 60vh;
+    margin-top: 10vh;
+    margin-left: 70vh;
     
-    
+    padding: 50px;
+    border-radius: 10px 10px 10px 10px;
 }
-.header{
-    font-size: 25px;
-}
-.chanel{
-    padding-inline-end: 10px;
-    color:hsl(228, 12%, 48%); 
-    padding-bottom: 0;
-}
-.cart:hover{
-    background-color:rgba(4, 17, 100, 0.99) ;
 
+.text-message{
+    color: black;
+    font-size: larger;
+    margin: 4vh;
 }
-@media (max-width: 379px) {
+@media (max-width: 375px) {
     .main {
-      width: 80%;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column; 
-      padding: 0;
-      margin-top: 0;
-      
-      position: relative;
-      
-      
+      margin-left: 5%;
     }
-    
-    
-      .image{
-        
-        width: 350px;
-        height: 300px;
-        
-        margin-top: 800px;
-        display: block;
-        margin-left: 70px;
-        padding-left: 0;
-        
-      }  
-    .info{
-        width: 350px;
-        height: 500px;
-        display: block;
-        margin-left: 420px;
-        margin-right: 350px;
-        margin-bottom: 500px;
-        margin-top: 0;
-        
-    }
-    
-  }
   
+    h1 {
+      font-size: 32px;
+    }
+  
+    .text-container {
+      margin: 30px;
+    }
+  
+    .input,
+    button {
+      width: 100%;
+    }
+  }
 
-    
-
-
-
-    

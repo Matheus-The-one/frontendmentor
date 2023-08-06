@@ -11,25 +11,22 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Dark cyan: hsl(228, 12%, 48%)
-- Cream: hsl(30, 38%, 92%)
+- Tomato: hsl(4, 100%, 67%)
 
 ### Neutral
 
-- Very dark blue: hsl(212, 21%, 14%)
-- Dark grayish blue: hsl(228, 12%, 48%)
+- Dark Slate Grey: hsl(234, 29%, 20%)
+- Charcoal Grey: hsl(235, 18%, 26%)
+- Grey: hsl(231, 7%, 60%)
 - White: hsl(0, 0%, 100%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size (paragraph): 14px
+- Font size (paragraph): 16px
 
 ### Font
 
-- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
-- Weights: 500, 700
-
-- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
-- Weights: 700
+- Family: [Roboto](https://fonts.google.com/specimen/Roboto)
+- Weights: 400, 700
